@@ -1,0 +1,13 @@
+{
+  "method": "sigmoid_logistic",
+  "rows": 5427,
+  "base_model": "C:\\Users\\subha\\OneDrive\\Desktop\\Sark\\Virtual Code\\Major Project\\THERMOS\\aiengine\\training\\models\\thermos_xgboost_final.json",
+  "classes": [
+    "AGRICULTURAL",
+    "INDUSTRIAL_FIRE",
+    "INDUSTRIAL_FLARE",
+    "MINING",
+    "UNCLASSIFIED",
+    "WILDFIRE"
+  ]
+}

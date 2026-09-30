@@ -1,0 +1,16 @@
+{
+  "model_name": "THERMOS Thermal Source Classifier",
+  "model_type": "XGBoost",
+  "training_data": "NASA FIRMS-derived real observations",
+  "label_type": "human-reviewed / validated labels",
+  "classes": [
+    "INDUSTRIAL_FLARE",
+    "INDUSTRIAL_FIRE",
+    "MINING",
+    "AGRICULTURAL",
+    "WILDFIRE",
+    "UNCLASSIFIED"
+  ],
+  "feature_count": 18,
+  "synthetic_data_used_for_final_model": false
+}

@@ -1,0 +1,36 @@
+{
+  "dataset": "C:\\Users\\subha\\OneDrive\\Desktop\\Sark\\Virtual Code\\Major Project\\THERMOS\\aiengine\\training\\datasets\\processed\\final_training_dataset.parquet",
+  "features": [
+    "frp",
+    "bright_ti4",
+    "bright_ti5",
+    "confidence_score",
+    "persistence_score",
+    "anomaly_score",
+    "distance_to_facility",
+    "industrial_context",
+    "forest_context",
+    "agricultural_context",
+    "builtup_context",
+    "ndvi_mean",
+    "ndvi_std",
+    "ndmi_mean",
+    "ndmi_std",
+    "sentinel2_quality_score",
+    "day_night_numeric",
+    "firms_type"
+  ],
+  "classes": [
+    "INDUSTRIAL_FLARE",
+    "INDUSTRIAL_FIRE",
+    "MINING",
+    "AGRICULTURAL",
+    "WILDFIRE",
+    "UNCLASSIFIED"
+  ],
+  "train_rows": 69,
+  "validation_rows": 0,
+  "test_rows": 0,
+  "validation": null,
+  "test": null
+}

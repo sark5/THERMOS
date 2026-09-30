@@ -1,0 +1,209 @@
+{
+  "model": "XGBoost",
+  "num_features": 83,
+  "features": [
+    "frp",
+    "bright_ti4",
+    "bright_ti5",
+    "confidence_score",
+    "scan",
+    "track",
+    "day_night_numeric",
+    "firms_type",
+    "observation_count",
+    "active_days",
+    "span_days",
+    "active_day_ratio",
+    "mean_frp",
+    "median_frp",
+    "max_frp",
+    "min_frp",
+    "frp_stddev",
+    "frp_cv",
+    "persistence_score",
+    "stability_score",
+    "anomaly_score",
+    "flare_signature_score",
+    "event_frp_vs_source_mean",
+    "event_frp_vs_source_median",
+    "event_frp_zscore",
+    "event_frp_percentile",
+    "event_frp_ratio_previous",
+    "event_frp_change",
+    "event_intensity_deviation",
+    "distance_to_facility",
+    "distance_to_powerplant",
+    "distance_to_refinery",
+    "distance_to_mine",
+    "distance_to_quarry",
+    "distance_to_flare",
+    "inside_facility_boundary",
+    "nearest_facility_count_500m",
+    "nearest_facility_count_1km",
+    "industrial_facility_density",
+    "industrial_context",
+    "mining_context",
+    "cluster_size",
+    "neighbor_count_1km",
+    "neighbor_count_5km",
+    "spatial_extent_km",
+    "convex_hull_area",
+    "event_density",
+    "spread_rate_km_day",
+    "front_direction",
+    "centroid_shift_km",
+    "cluster_growth_rate",
+    "forest_probability",
+    "cropland_probability",
+    "grassland_probability",
+    "shrubland_probability",
+    "builtup_probability",
+    "bareland_probability",
+    "water_probability",
+    "forest_context",
+    "agricultural_context",
+    "vegetation_context",
+    "builtup_context",
+    "bare_land_context",
+    "month",
+    "day_of_year",
+    "week_of_year",
+    "season",
+    "seasonal_activity_score",
+    "source_month_activity",
+    "seasonal_peak_score",
+    "ndvi_mean",
+    "ndvi_std",
+    "ndmi_mean",
+    "ndmi_std",
+    "swir_intensity",
+    "night_light_mean",
+    "industrial_nightlight_score",
+    "temperature",
+    "relative_humidity",
+    "wind_speed",
+    "weather_fire_risk",
+    "population_1km",
+    "distance_to_settlement"
+  ],
+  "classes": [
+    "AGRICULTURAL",
+    "INDUSTRIAL_FIRE",
+    "INDUSTRIAL_FLARE",
+    "MINING",
+    "UNCLASSIFIED",
+    "WILDFIRE"
+  ],
+  "train_rows": 80693,
+  "validation_rows": 16616,
+  "test_rows": 18872,
+  "test": {
+    "accuracy": 0.9853751589656634,
+    "balanced_accuracy": 0.9843785952188792,
+    "macro_precision": 0.9849206054636105,
+    "macro_recall": 0.9843785952188792,
+    "macro_f1": 0.9846219232472923,
+    "weighted_f1": 0.9854028968666624,
+    "classification_report": {
+      "AGRICULTURAL": {
+        "precision": 0.9990023279015631,
+        "recall": 0.9953611663353215,
+        "f1-score": 0.9971784232365145,
+        "support": 3018.0
+      },
+      "INDUSTRIAL_FIRE": {
+        "precision": 0.9793310785419015,
+        "recall": 0.9612689044632977,
+        "f1-score": 0.9702159344750558,
+        "support": 2711.0
+      },
+      "INDUSTRIAL_FLARE": {
+        "precision": 0.9815864022662889,
+        "recall": 0.9847246891651865,
+        "f1-score": 0.9831530413193829,
+        "support": 2815.0
+      },
+      "MINING": {
+        "precision": 0.9997557997557998,
+        "recall": 0.9990239141044412,
+        "f1-score": 0.9993897229342121,
+        "support": 4098.0
+      },
+      "UNCLASSIFIED": {
+        "precision": 0.9498480243161094,
+        "recall": 0.9668935643564357,
+        "f1-score": 0.958295001533272,
+        "support": 3232.0
+      },
+      "WILDFIRE": {
+        "precision": 1.0,
+        "recall": 0.9989993328885924,
+        "f1-score": 0.9994994159853162,
+        "support": 2998.0
+      },
+      "accuracy": 0.9853751589656634,
+      "macro avg": {
+        "precision": 0.9849206054636105,
+        "recall": 0.9843785952188792,
+        "f1-score": 0.9846219232472923,
+        "support": 18872.0
+      },
+      "weighted avg": {
+        "precision": 0.9854826930851286,
+        "recall": 0.9853751589656634,
+        "f1-score": 0.9854028968666624,
+        "support": 18872.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        3004,
+        0,
+        0,
+        0,
+        14,
+        0
+      ],
+      [
+        0,
+        2606,
+        2,
+        0,
+        103,
+        0
+      ],
+      [
+        0,
+        1,
+        2772,
+        1,
+        41,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        4094,
+        4,
+        0
+      ],
+      [
+        3,
+        54,
+        50,
+        0,
+        3125,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        3,
+        2995
+      ]
+    ]
+  }
+}

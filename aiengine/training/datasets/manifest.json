@@ -1,0 +1,27 @@
+{
+  "project": "THERMOS",
+
+  "region": "India",
+
+  "sources": [
+    "VIIRS_NOAA20_SP",
+    "VIIRS_NOAA21_SP"
+  ],
+
+  "processing_preference": "standard_processing",
+
+  "start_date": "2018-01-01",
+  "end_date": "2026-08-31",
+
+  "labeling": {
+    "method": "multi-source weak supervision",
+    "gold_review": true
+  },
+
+  "splits": {
+    "train_end": 2023,
+    "calibration_year": 2024,
+    "validation_year": 2025,
+    "test_start": 2026
+  }
+}

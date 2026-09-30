@@ -1,0 +1,24 @@
+{
+  "active_model": "thermal_classifier_calibrated.joblib",
+
+  "model_version": "7.0.0",
+
+  "algorithm": "XGBoost",
+
+  "training_data": "NASA FIRMS-derived",
+
+  "calibration": "sigmoid",
+
+  "classes": [
+    "INDUSTRIAL_FLARE",
+    "INDUSTRIAL_FIRE",
+    "MINING",
+    "AGRICULTURAL",
+    "WILDFIRE",
+    "UNCLASSIFIED"
+  ],
+
+  "feature_count": 18,
+
+  "synthetic_data_used": false
+}

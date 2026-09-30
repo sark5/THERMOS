@@ -1,0 +1,6 @@
+LABEL_QUALITY = {
+    "STRONG": 1.00,
+    "MODERATE": 0.75,
+    "WEAK": 0.50,
+    "UNRESOLVED": 0.00,
+}

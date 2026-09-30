@@ -1,0 +1,102 @@
+﻿@import "tailwindcss";
+@import "maplibre-gl/dist/maplibre-gl.css";
+
+/*  THERMOS SIH Theme Variables  */
+:root {
+  color-scheme: light;
+  --bg-base:       #f1f5f9;
+  --bg-card:       #ffffff;
+  --bg-card-hover: #e2e8f0;
+  --bg-header:     #ffffff;
+  --border:        #cbd5e1;
+  --border-strong: #64748b;
+  --text-primary:  #000000; /* Pure deep visible black */
+  --text-secondary:#0f172a; /* High-contrast near-black slate-900 */
+  --text-muted:    #334155; /* Bold solid slate-700 instead of faint washed-out gray */
+  --scrollbar-bg:  #e2e8f0;
+  --scrollbar-thumb: #94a3b8;
+  --shadow-sm:     0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md:     0 4px 12px rgba(0,0,0,0.10);
+  --shadow-lg:     0 10px 30px rgba(0,0,0,0.12);
+  
+  /* Dynamic badge colors for high contrast in light mode */
+  --b-yellow:  #854d0e; /* yellow-800 */
+  --b-red:     #b91c1c; /* red-700 */
+  --b-orange:  #c2410c; /* orange-700 */
+  --b-green:   #15803d; /* green-700 */
+  --b-purple:  #86198f; /* fuchsia-800 */
+  --b-cyan:    #0e7490; /* cyan-700 */
+  --b-emerald: #15803d; /* emerald-700 */
+  --b-amber:   #b45309; /* amber-700 */
+  --b-indigo:  #4338ca; /* indigo-700 */
+  --b-slate:   #334155; /* slate-700 */
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg-base:       #050811;
+  --bg-card:       #0d1322;
+  --bg-card-hover: #172033;
+  --bg-header:     #080c18;
+  --border:        #1e293b;
+  --border-strong: #334155;
+  --text-primary:  #f8fafc;
+  --text-secondary:#94a3b8;
+  --text-muted:    #64748b;
+  --scrollbar-bg:  #0a0f1d;
+  --scrollbar-thumb: #1e293b;
+  --shadow-sm:     0 1px 3px rgba(0,0,0,0.4);
+  --shadow-md:     0 4px 12px rgba(0,0,0,0.5);
+  --shadow-lg:     0 10px 30px rgba(0,0,0,0.8);
+
+  /* Dynamic badge colors for dark mode */
+  --b-yellow:  #fde047; /* yellow-300 */
+  --b-red:     #f87171; /* red-400 */
+  --b-orange:  #fdba74; /* orange-300 */
+  --b-green:   #4ade80; /* green-400 */
+  --b-purple:  #e879f9; /* fuchsia-400 */
+  --b-cyan:    #67e8f9; /* cyan-300 */
+  --b-emerald: #6ee7b7; /* emerald-300 */
+  --b-amber:   #fcd34d; /* amber-300 */
+  --b-indigo:  #818cf8; /* indigo-400 */
+  --b-slate:   #94a3b8; /* slate-400 */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+/*  Scrollbars  */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--scrollbar-bg); }
+::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--border-strong); }
+
+/*  Theme-aware utility classes  */
+.th-bg        { background-color: var(--bg-base); }
+.th-card      { background-color: var(--bg-card); }
+.th-header    { background-color: var(--bg-header); }
+.th-border    { border-color: var(--border); }
+.th-border-s  { border-color: var(--border-strong); }
+.th-text      { color: var(--text-primary); }
+.th-text-sec  { color: var(--text-secondary); }
+.th-text-mute { color: var(--text-muted); }
+.th-shadow-sm { box-shadow: var(--shadow-sm); }
+.th-shadow-md { box-shadow: var(--shadow-md); }
+
+/*  MapLibre popup reset  */
+.maplibregl-popup-content {
+  padding: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+.maplibregl-popup-tip { display: none !important; }
+

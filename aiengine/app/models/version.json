@@ -1,0 +1,17 @@
+﻿{
+  "model_name": "THERMOS Thermal Source Classifier",
+  "version": "1.0.0",
+  "algorithm": "XGBoost",
+  "data_source": "NASA FIRMS",
+  "labeling": "multi-source weak supervision + human review",
+  "explainability": "SHAP TreeExplainer",
+  "feature_count": 18,
+  "classes": [
+    "INDUSTRIAL_FLARE",
+    "INDUSTRIAL_FIRE",
+    "MINING",
+    "AGRICULTURAL",
+    "WILDFIRE",
+    "UNCLASSIFIED"
+  ]
+}

@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXIST thermos.thermal_history(
+    id BIGSERIAL PRIMARY KEY,
+    facility_id BIGINT,
+    latitude DOUBLE PRECISION NOT NULL,
+    longitude DOUBLE PRECISION NOT NULL,
+    observation_count INTEGER DEFAULT 0,
+    active_days INTEGER DEFAULT 0,
+    first_seen TIMESTAMPTZ,
+    last_seen TIMESTAMPTZ,
+    mean_frp DOUBLE PRECISION,
+    median_frp DOUBLE PRECISION,
+    max_frp DOUBLE PRECISION,
+    min_frp DOUBLE PRECISION,
+    frp_stddev DOUBLE PRECISION,
+    persistence_score DOUBLE PRECISION,
+    anomaly_score DOUBLE PRECISION,
+    thermal_status VARCHAR(50),
+    created_at TIMESTAMPTZ DEFAULT NOW(), 
+    updated_at TIMESTAMPTZ DEFAULT NOW()
+)

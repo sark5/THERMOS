@@ -1,0 +1,15 @@
+requests
+pandas
+numpy
+psycopg2-binary
+python-dotenv
+requests
+pandas
+numpy
+psycopg2-binary
+python-dotenv
+geopandas
+shapely
+rasterio
+Pillow
+pyarrow

@@ -1,0 +1,16 @@
+{
+  "version": "2.1.0",
+  "model_type": "XGBoost (Calibrated Multi-Class)",
+  "features_count": 83,
+  "accuracy": 0.9854,
+  "macro_f1": 0.9846,
+  "classes": [
+    "AGRICULTURAL",
+    "INDUSTRIAL_FIRE",
+    "INDUSTRIAL_FLARE",
+    "MINING",
+    "UNCLASSIFIED",
+    "WILDFIRE"
+  ],
+  "training_dataset_rows": 116181
+}

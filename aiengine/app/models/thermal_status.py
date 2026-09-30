@@ -1,0 +1,12 @@
+﻿def determine_thermal_status(persistence_score:float,anomaly_score:float)->str:
+    if anomaly_score>=80:
+        return "CRITICALLY_ANOMALY"
+    if anomaly_score>=60:
+        return "High_ANOMALY"
+    if anomaly_score>=0.35:
+        return "MODERATE_ANOMALY"
+    if persistence_score>=0.70:
+        return "PERSISTTENCE_NORMAL"
+    if persistence_score>=0.40:
+        return "RECURRING"
+    return "SPORADIC"
