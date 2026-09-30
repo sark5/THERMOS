@@ -125,7 +125,7 @@ THERMOS/
 - **Python 3.10+** (Python 3.14 installed in `.venv`)
 - **Node.js 18+** & `npm`
 
-### Option 1: One-Click Startup (Recommended for SIH Demo)
+### Option 1: One-Click Startup 
 Simply double-click or run:
 ```cmd
 start_thermos.bat
